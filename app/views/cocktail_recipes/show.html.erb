@@ -1,0 +1,11 @@
+<h1><%= @cocktail_recipe.name %></h1>
+<p><%= @cocktail_recipe.recipe %><br>
+   <%= @cocktail_recipe.creator %>
+   <%= button_to "Edit", edit_cocktail_recipe_path(@cocktail_recipe), :method => :get %>
+   <%= button_to "Delete", @cocktail_recipe, :method => :delete %>
+</p>
+<nav>
+    <%= link_to "Go back", cocktail_recipes_path%>
+</nav>
+
+
